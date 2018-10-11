@@ -1,0 +1,2 @@
+gcc main.c fizz_buzz.c -o fizz-buzz
+gcc fizz_buzz.c test_main.c -lcmocka -o test-fizz-buzz
