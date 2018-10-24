@@ -11,6 +11,7 @@ static void test_given_equal_different_should_be_funny(void **state){
     (void)state;
     char output[10];
     int i = 0;
+    int distance;
     char input[][100] = {
         "ab", "cd",
         "AB", "CD",

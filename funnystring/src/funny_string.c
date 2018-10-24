@@ -5,7 +5,7 @@
 
 int funny_string(char* S, char* result) {
 
-        int fl = 0;
+        int flo = 0;
         int i, j, l;
 
         l = strlen(S);
@@ -13,15 +13,15 @@ int funny_string(char* S, char* result) {
         for(i=1, j=l-1; i < l && j > 0; i++, j--)
         {
             if(abs(S[i] - S[i-1]) == abs(S[j-1] - S[j]))
-                fl++;
+                flo++;
             else
                break;
         }
 
-        if(fl == l-1)
+        if(flo == l-1)
             strcpy(result, "funny");
         else
             strcpy(result, "not funny");
 
-        return fl;
+        return flo;
 }

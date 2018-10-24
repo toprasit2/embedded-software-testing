@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
+
 #include "funny_string.h"
 
 int main() {
